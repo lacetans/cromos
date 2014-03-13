@@ -7,8 +7,6 @@
 	</head>
 
 	<body>
-		<h3></h3>
-		<br />
 		<?php
 		echo"<h1>Resum sobre LOPD</h1>
 			<p>La llei orgànica de protecció de dades (LOPD) es una llei que té per objectiu garantitzar i protegir el tractament de dades personals, les llibertats publiques i drets fonamentals de els persones, especialment el honor, intimitat i privacitat personal i familiar.

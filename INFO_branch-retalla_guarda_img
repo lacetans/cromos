@@ -1,0 +1,47 @@
+﻿branch retalla_guarda_img
+
+Carregar una imatge, seleccionar les coordenades de la imatge per crear els cromos, disposa
+de dues funcions individual (de 1 a 4 cromos) i dividit (de 2 o 4 cromos), un cop acabat
+es permet guardar els cromos al servidor.
+
+Arxius:
+  ./assets/ccrop/css/ccrop.css (estils del creador de cromos)
+  ./assets/ccrop/css/imgareaselect.css (estils de la selecció de de imatge)
+  ./assets/ccrop/img/cc_border_h.gif (imatge del efecte de la selecció de la imatge)
+  ./assets/ccrop/img/cc_border_v.gif (imatge del efecte de la selecció de la imatge)
+  ./assets/ccrop/img/cc_img_ini.png (imatges inicial del creador de cromos)
+  ./assets/ccrop/js/ccrop.js (funcions del creador de cromos)
+  ./assets/ccrop/js/jquery.imgareaselect.pack.js (funcions de la selecció de la imatge)
+  ./assets/ccrop/php/ccrop.php (crear carpetes, retallar i guardar les imatges retallades)
+
+Crud:
+	albums
+	cromos
+	album_cromo_pagina
+
+Modificats en el crud Albums:
+  ./protected/views/albums/view.php (afegit el codi html del creador de cromos)
+  ./protected/controllers/AlbumsCrontoller.php (afegit actionAlta_Cromos guardar a la db)
+  ./protected/views/layouts/main.php (afegit al menu accesos a Albums, Cromos i )
+
+Base de dades:
+  albums: afegir camp usuari_id int(11)
+  cromos: afegir camp usuari_id int(11)
+
+Creador de cromos:
+  Totes les funcions en el fitxer ccrop.js
+
+Proces de guardat:
+  view.php -> boto event per guardar
+  ccrop.js -> save_cromo() ->
+    view.php -> alta_cromos() -> js via ajax amb post:
+      AlbumsController -> actionAlta_cromos() -> guardar a la db
+    js via ajax amb post:
+      ccrop.php -> crar carpetes i guardar cromos
+
+Els cromos es guarden al servidor a:
+  /var/www/dades/cromos/1/2.jpg
+  1: Id de l'album de cromos en la db albums
+  2: Id del cromo en la db cromos
+
+2014 - Daniel Ramos Lladó

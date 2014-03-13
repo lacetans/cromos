@@ -1,0 +1,137 @@
+/* GENERAL */
+div#cc_container{
+  display: none;
+  font-family: arial, helvetica, sans-serif;
+  margin: 15px auto;
+  height: auto;
+  width: 1070px;
+}
+
+/* CONTROL TABLE */
+table#cc_ctrl{
+  background: #ddd;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+  /*min-width: 980px;*/
+}
+td.cc_ce0w{
+  /*border: 1px solid black;*/
+  width: 25px;
+}
+td.cc_lefh{
+  /*border: 1px solid black;*/
+  height: 27px;
+  padding-left: 3px;
+  text-align: left;
+}
+td.cc_cenh{
+  /*border: 1px solid black;*/
+  height: 27px;
+  text-align: center;
+}
+td.cc_righ{
+  /*border: 1px solid black;*/
+  height: 27px;
+  padding-right: 3px;
+  text-align: right;
+}
+button.cc_btnw0{
+  width: 90px;
+}
+button.cc_btnw1{
+  width: 65px;
+}
+input#cc_file{
+  margin-left: 5px;
+}
+span#cc_modes, button#cc_mode, span#cc_nums, button#cc_num, span#cc_nexts, button#cc_next, span#cc_saves, button#cc_save, button#cc_dels, button#cc_del0, button#cc_del1, button#cc_del2, button#cc_del3, button#cc_del4{
+ display: inline-block;
+}
+
+/* DROP FILE ZONE */
+div#cc_drop{
+  background: #ddd;
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px dotted #999;
+  text-align: center;
+  height: 85px;
+  width: 85px;
+}
+div#cc_drop:hover{
+  border: 3px dotted #777;
+}
+
+/* CROP IMAGE */
+div#cc_left{
+  height: auto;
+  width: 660px;
+}
+img#cc_img{
+  background: #ddd;
+  border: 1px solid #000;
+  height: auto;
+  width: 100%;
+}
+/* TEST PHP CODE RETURN TO JAVSCRIPT AJAX */
+div#cc_left{
+  display: block;
+}
+
+/* CANVAS PREVIEW */
+div#cc_right{
+  float: right;
+  margin-right: 2px;
+  height: auto;
+  width: 400px;
+}
+canvas#cc_canvas{
+  background: #ddd;
+  border: 1px solid #000;
+  height: auto;
+  width: 100%;
+}
+
+/* RESPONSIVE WIDTH SIZE */
+@media only screen and (max-width: 1199px) {
+  div#cc_container{
+    width: 860px;
+  }
+  td.cc_ce0w{
+    width: 5px;
+  }
+  div#cc_left{
+    width: 530px;
+  }
+  div#cc_right{
+    width: 320px;
+  }
+@media only screen and (max-width: 979px) {
+  div#cc_container{
+    margin-left: -33px;
+    width: 710px;
+  }
+  td.cc_ce0w{
+    width: 1px;
+  }
+  div#cc_left{
+    width: 435px;
+  }
+  div#cc_right{
+    width: 265px;
+  }
+@media only screen and (max-width: 767px) {
+  div#cc_container{
+    width: 624px;
+  }
+  td.cc_ce0w{
+    width: 1px;
+  }
+  div#cc_left{
+    width: 400px;
+  }
+  div#cc_right{
+    width: 200px;
+  }
+}

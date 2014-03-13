@@ -30,6 +30,9 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
+				array('label'=>'Albums', 'url'=>array('Albums/index')),
+				//array('label'=>'Cromos', 'url'=>array('Cromos/index')),
+				//array('label'=>'AlbumCromoPagina', 'url'=>array('/albumCromoPagina/index')),
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),

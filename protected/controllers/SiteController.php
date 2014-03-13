@@ -2,22 +2,63 @@
 
 class SiteController extends Controller
 {
+
+	public $attempts = 2;
+	public $counter;
+
+	private function captchaRequired()
+	{
+		return Yii::app()->session->itemAt('captchaRequired') >= $this->attempts;
+	}
+
+	/*public function accessRules() {
+        	return array(
+			array(	'allow',
+				'actions' => array('captcha'),
+				'users' =>array('*'),
+		),
+		);
+  	}*/
 	/**
 	 * Declares class-based actions.
 	 */
 	public function actions()
 	{
 		return array(
-			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
 				'class'=>'CCaptchaAction',
 				'backColor'=>0xFFFFFF,
 			),
-			// page action renders "static" pages stored under 'protected/views/site/pages'
 			// They can be accessed via: index.php?r=site/page&view=FileName
 			'page'=>array(
 				'class'=>'CViewAction',
 			),
+			'oauth' => array(
+        // the list of additional properties of this action is below
+        'class'=>'ext.hoauth.HOAuthAction',
+        // Yii alias for your user's model, or simply class name, when it already on yii's import path
+        // default value of this property is: User
+        'model' => 'Users', 
+        // map model attributes to attributes of user's social profile
+        // model attribute => profile attribute
+        // the list of avaible attributes is below
+        'attributes' => array(
+          'email' => 'email',
+          'fname' => 'firstName',
+          'lname' => 'lastName',
+          'gender' => 'genderShort',
+          'birthday' => 'birthDate',
+          // you can also specify additional values, 
+          // that will be applied to your model (eg. account activation status)
+          'acc_status' => 1,
+        ),
+      ),
+      // this is an admin action that will help you to configure HybridAuth 
+      // (you must delete this action, when you'll be ready with configuration, or 
+      // specify rules for admin role. User shouldn't have access to this action!)
+      'oauthadmin' => array(
+        'class'=>'ext.hoauth.HOAuthAdminAction',
+      ),
 		);
 	}
 
@@ -77,8 +118,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
-
+		$model= $this->captchaRequired()? new LoginForm('captchaRequired') : new LoginForm;
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
 		{
@@ -93,6 +133,12 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
+
+			else
+			{
+				$this->counter = Yii::app()->session->itemAt('captchaRequired') + 1;
+				Yii::app()->session->add('captchaRequired',$this->counter);
+			}
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

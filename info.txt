@@ -1,0 +1,10 @@
+S'ha fet:
+
+1. Validació d'usuaris mitjançant usuari/contrasenya, Facebook, Gmail i Twitter.
+http://bettercallsaul.tk/cromos/index.php?r=site/login
+2. Captcha implementat quan la validació és erronia 3 vegades.
+http://bettercallsaul.tk/cromos/index.php?r=site/login
+3. Registre d'usuaris.
+http://bettercallsaul.tk/cromos/index.php?r=users/register
+4. Implementació de ShakeCSS.
+http://bettercallsaul.tk/cromos/index.php?r=site/login

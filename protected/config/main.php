@@ -1,4 +1,3 @@
-
 <?php
 
 // uncomment the following to define a path alias
@@ -6,14 +5,17 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-//print(__DIR__ . '/../extensions/bootstrap');die();
+//print(__DIR__ .'/../extensions/bootstrap');die();
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-
+	
+	'aliases'=>array(
+		'bootstrap'=> realpath(__DIR__. '/../extensions/bootstrap'), // change this if necessary
+	),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -23,24 +25,23 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+	
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'Endepro2007',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+			'generatorPaths' => array('bootstrap.gii'),
 		),
-		*/
+	
 	),
-	'aliases' => array(
 
-	    // yiistrap configuration
-	    'bootstrap' => realpath(__DIR__ . '/../extensions/yiistrap'), // change if necessary
-	    // yiiwheels configuration
-	    'yiiwheels' => realpath(__DIR__ . '/../extensions/yiiwheels'), // change if necessary
-	),
 	// application components
 	'components'=>array(
+		
+		'bootstrap' => array(
+			'class'=>'bootstrap.components.TbApi',
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -60,15 +61,13 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
 		// uncomment the following to use a MySQL database
-		/*
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=cromos',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'Endepro2007',
 			'charset' => 'utf8',
 		),
-		*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -87,14 +86,6 @@ return array(
 				),
 				*/
 			),
-		),
-		// yiistrap configuration
-		'bootstrap' => array(
-		    'class' => 'bootstrap.components.TbApi',
-		),
-		// yiiwheels configuration
-		'yiiwheels' => array(
-		    'class' => 'yiiwheels.YiiWheels',   
 		),
 	),
 

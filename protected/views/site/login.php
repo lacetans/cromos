@@ -11,6 +11,8 @@ $this->breadcrumbs=array(
 
 <h1>Login</h1>
 
+<?php $this->widget('ext.hoauth.widgets.HOAuth'); ?>
+
 <p>Please fill out the following form with your login credentials:</p>
 
 <div class="form">
@@ -19,24 +21,57 @@ $this->breadcrumbs=array(
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
+		'afterValidate' => 'js:function(form,data,hasError){
+			if(hasError){
+				for (var i in data) $("#"+i).addClass("shake shake-horizontal");
+				return false;
+			}
+			else{
+				form.children().removeClass("shake shake-horizontal");
+				return true;
+			}
+		}',
+	'afterValidateAttribute' => 'js:function(form, attribute, data, hasError){
+		if(hasError) {
+			$("#divshake").removeClass("shake shake-vertical shake-constant shake-slow hover-stop");
+			$("#divshake").addClass("shake shake-horizontal shake-constant shake-slow hover-stop");
+		}
+		else {
+			$("#divshake").removeClass("shake shake-horizontal shake-constant shake-slow hover-stop");
+			$("#divshake").addClass("shake shake-vertical shake-constant shake-slow hover-stop");
+		}
+		}'
 	),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<div id="divshake">
+		<div class="row">
+			<?php echo $form->labelEx($model,'username'); ?>
+			<?php echo $form->textField($model,'username'); ?>
+			<?php echo $form->error($model,'username'); ?>
+		</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
+		<div class="row">
+			<?php echo $form->labelEx($model,'password'); ?>
+			<?php echo $form->passwordField($model,'password'); ?>
+			<?php echo $form->error($model,'password'); ?>
+			<p class="hint">
+				Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
+			</p>
+		</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
+		<?php if($model->scenario == 'captchaRequired'):?>
+			<div class="row">
+				<?php echo CHtml::activeLabelEx($model,'verifyCode'); ?>
+				<div>
+				<?php $this->widget('CCaptcha');?>
+				<?php echo CHtml::activeTextField($model,'verifyCode');?>
+				</div>
+				<div class="hint">Entra les lletras com es mostren a l'imatge</div>
+			</div>
+		<?php endif; ?>
+
 	</div>
 
 	<div class="row rememberMe">
@@ -48,6 +83,5 @@ $this->breadcrumbs=array(
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Login'); ?>
 	</div>
-
-<?php $this->endWidget(); ?>
-</div><!-- form -->
+<?php $this->endWidget();?>
+</div><!-- form-->

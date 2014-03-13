@@ -30,3 +30,1784 @@ Stack trace:
 #27 {main}
 REQUEST_URI=/cromos/
 ---
+2014/02/20 18:33:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/02/20 18:37:13 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAdminAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauthadmin')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauthadmin', 'oauthadmin')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauthadmin')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauthadmin')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauthadmin')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauthadmin
+---
+2014/02/20 18:37:45 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAdminAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauthadmin')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauthadmin', 'oauthadmin')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauthadmin')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauthadmin')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauthadmin')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauthadmin
+---
+2014/02/20 18:37:59 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauth')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauth', 'oauth')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauth')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth
+---
+2014/02/20 18:39:45 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauth')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauth', 'oauth')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauth')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth
+---
+2014/02/20 18:39:46 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauth')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauth', 'oauth')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauth')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth
+---
+2014/02/20 18:40:36 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauth')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauth', 'oauth')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauth')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth
+---
+2014/02/20 18:40:37 [error] [exception.CException] exception 'CException' with message 'Alias "ext.hoauth.HOAuthAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.hoauth.HOAu...', true)
+#1 /var/www/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'oauth')
+#2 /var/www/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'oauth', 'oauth')
+#3 /var/www/yii/framework/web/CController.php(259): CController->createAction('oauth')
+#4 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#5 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#6 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/cromos/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth
+---
+2014/02/20 18:49:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cromos.user_oauth' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user_oauth`.
+in /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php (309)
+in /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php (50)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (194)
+2014/02/20 18:49:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cromos.user_oauth' doesn't exist. The SQL statement executed was: 			ALTER TABLE `user_oauth` CHANGE `name` `provider` VARCHAR( 45 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+			CHANGE `value` `identifier` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+			.
+in /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php (339)
+in /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php (50)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (194)
+2014/02/20 19:13:17 [error] [exception.CException] exception 'CException' with message 'Property "Users.fname" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('fname', 'Lackkk')
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(464): CActiveRecord->__set('fname', 'Lackkk')
+#2 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(353): HOAuthAction->populateModel(Object(Users), Object(Hybrid_User_Profile))
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#4 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Twitter')
+#5 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#6 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#11 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cromos/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+---
+2014/02/20 19:16:17 [error] [exception.CException] exception 'CException' with message 'Property "Users.fname" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('fname', 'Lackkk')
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(464): CActiveRecord->__set('fname', 'Lackkk')
+#2 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(353): HOAuthAction->populateModel(Object(Users), Object(Hybrid_User_Profile))
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#4 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Twitter')
+#5 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#6 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#11 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cromos/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 19:38:48 [error] [exception.CException] exception 'CException' with message 'Property "Users.fname" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('fname', 'Lackkk')
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(464): CActiveRecord->__set('fname', 'Lackkk')
+#2 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(353): HOAuthAction->populateModel(Object(Users), Object(Hybrid_User_Profile))
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#4 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Twitter')
+#5 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#6 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#11 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cromos/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 19:40:47 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:450)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (450)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:43:58 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:450)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (450)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:44:23 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:450)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (450)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:46:23 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:451)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (451)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:46:26 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:451)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (451)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:46:38 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:451)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (451)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:46:56 [error] [exception.Exception] exception 'Exception' with message 'User profile request failed! Twitter returned an error. ' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Twitter.php:77
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Provider_Adapter.php(191): Hybrid_Providers_Twitter->getUserProfile()
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(244): Hybrid_Provider_Adapter->__call('getUserProfile', Array)
+#2 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(244): Hybrid_Provider_Adapter->getUserProfile()
+#3 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getProfile()
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('profile')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(195): CActiveRecord->__get('profile')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Twitter')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 19:53:50 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:453)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (453)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 19:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "oauth?hauth.done=Twitter".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('oauth?hauth.don...')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth?hauth.don...')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth?haut...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth?hauth.done=Twitter
+---
+2014/02/20 19:54:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "oauth?hauth.done=Twitter".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('oauth?hauth.don...')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth?hauth.don...')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth?haut...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth?hauth.done=Twitter
+---
+2014/02/20 19:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "oauth?hauth.done=Google".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('oauth?hauth.don...')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth?hauth.don...')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth?haut...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth?hauth.done=Google
+---
+2014/02/20 19:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "oauth?hauth.done=Twitter".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('oauth?hauth.don...')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth?hauth.don...')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth?haut...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth?hauth.done=Twitter
+---
+2014/02/20 19:55:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "oauth?hauth.done=Google".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('oauth?hauth.don...')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth?hauth.don...')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth?haut...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth?hauth.done=Google
+---
+2014/02/20 19:57:13 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Twitter returned an invalid oauth verifier.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Provider_Model_OAuth1.php:131
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Provider_Model_OAuth1->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Twitter returned an invalid oauth verifier.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Google')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 19:57:30 [error] [exception.CException] exception 'CException' with message 'Property "Users.acc_status" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('acc_status', 1)
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(469): CActiveRecord->__set('acc_status', 1)
+#2 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(353): HOAuthAction->populateModel(Object(Users), Object(Hybrid_User_Profile))
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#4 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#5 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#6 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#11 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/cromos/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+---
+2014/02/20 20:00:44 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:01:05 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:01:39 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:02:49 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:06:58 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:08:58 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:377
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:11:25 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:378
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:11:29 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:378
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:11:33 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:454)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (454)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:11:36 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:454)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (454)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:11:41 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:378
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:12:39 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'password' => 
+  array (
+    0 => 'Password must be a number.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:379
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:18:23 [error] [exception.Exception] exception 'Exception' with message 'Error, while saving Users model:
+
+array (
+  'login' => 
+  array (
+    0 => 'Login cannot be blank.',
+  ),
+  'password' => 
+  array (
+    0 => 'Password cannot be blank.',
+  ),
+)' in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:380
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(239): HOAuthAction->processUser(Object(Users), Object(Hybrid_User_Profile))
+#1 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Google')
+#2 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#3 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/cromos/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Google
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/20 20:23:33 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:456)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (456)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:25:00 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:456)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (456)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:25:04 [error] [php] Undefined index:  (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:456)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (456)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:27:12 [error] [php] Object of class Hybrid_User_Profile could not be converted to string (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:454)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (454)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:28:32 [error] [php] Undefined index: f (/var/www/cromos/protected/extensions/hoauth/HOAuthAction.php:456)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth()
+#1 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): HOAuthAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (456)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (353)
+in /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php (239)
+2014/02/20 20:31:17 [error] [exception.Exception] exception 'Exception' with message 'User profile request failed! Twitter returned an error. ' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Twitter.php:77
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Provider_Adapter.php(191): Hybrid_Providers_Twitter->getUserProfile()
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(244): Hybrid_Provider_Adapter->__call('getUserProfile', Array)
+#2 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(244): Hybrid_Provider_Adapter->getUserProfile()
+#3 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getProfile()
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('profile')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(195): CActiveRecord->__get('profile')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Twitter')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Twitter
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/25 15:05:34 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 15:07:48 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/25 15:49:41 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/25 15:49:48 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/02/25 16:05:40 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 16:06:01 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 16:06:12 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 16:07:13 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 16:07:54 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/25 16:23:19 [error] [exception.Exception] exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Providers/Facebook.php:91
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(175): Hybrid_Providers_Facebook->loginFinish()
+#1 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Endpoint.php(56): Hybrid_Endpoint::processAuthDone()
+#2 /var/www/cromos/protected/extensions/hoauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#3 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(174): require('/var/www/cromos...')
+#4 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#5 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+
+Next exception 'Exception' with message 'Authentication failed! Facebook returned an invalid user id.' in /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php:147
+Stack trace:
+#0 /var/www/cromos/protected/extensions/hoauth/hybridauth/Hybrid/Auth.php(39): Hybrid_Auth::initialize(Array)
+#1 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(159): Hybrid_Auth->__construct(Array)
+#2 /var/www/yii/framework/base/CComponent.php(111): UserOAuth->getHybridAuth()
+#3 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('hybridauth')
+#4 /var/www/cromos/protected/extensions/hoauth/models/UserOAuth.php(194): CActiveRecord->__get('hybridauth')
+#5 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(194): UserOAuth->authenticate('Facebook')
+#6 /var/www/cromos/protected/extensions/hoauth/HOAuthAction.php(170): HOAuthAction->oAuth('Facebook')
+#7 /var/www/yii/framework/web/actions/CAction.php(76): HOAuthAction->run()
+#8 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(HOAuthAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(HOAuthAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('oauth')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/oauth')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/oauth&provider=Facebook
+---
+2014/02/28 19:09:04 [error] [exception.CException] exception 'CException' with message 'Alias "ext.AiiAntiSpamBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(196): YiiBase::import('ext.AiiAntiSpam...', true)
+#1 /var/www/yii/framework/base/CComponent.php(329): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CComponent.php(298): CComponent->attachBehavior('antiSpam', Array)
+#3 /var/www/yii/framework/web/CController.php(114): CComponent->attachBehaviors(Array)
+#4 /var/www/yii/framework/web/CWebApplication.php(359): CController->__construct('site', NULL)
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cromos/index.php
+---
+2014/03/03 16:06:50 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/cromos/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/cromos/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/cromos...')
+#1 /var/www/cromos/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/cromos/protected/extensions/yiistrap/components/TbApi.php(218): CAssetManager->publish('/var/www/cromos...', false, -1, false)
+#3 /var/www/cromos/protected/extensions/yiistrap/components/TbApi.php(51): TbApi->getAssetsUrl()
+#4 /var/www/cromos/protected/extensions/yiistrap/components/TbApi.php(92): TbApi->registerCoreCss()
+#5 /var/www/cromos/protected/extensions/yiistrap/components/TbApi.php(137): TbApi->registerAllCss()
+#6 /var/www/cromos/protected/views/layouts/main.php(2): TbApi->register()
+#7 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#8 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#9 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#10 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#11 /var/www/cromos/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#12 /var/www/cromos/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#13 /var/www/cromos/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#14 /var/www/cromos/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#15 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#16 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#17 /var/www/cromos/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#18 /var/www/cromos/protected/controllers/SiteController.php(62): CController->render('index')
+#19 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#20 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#22 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#24 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /var/www/cromos/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/cromos/index.php
+---
+2014/03/06 17:00:05 [error] [exception.CException] exception 'CException' with message 'CCaptchaValidator.action "captcha" is invalid. Unable to find such an action in the current controller.' in /var/www/cromos/yii/framework/validators/CCaptchaValidator.php:77
+Stack trace:
+#0 /var/www/cromos/yii/framework/validators/CCaptchaValidator.php(49): CCaptchaValidator->getCaptchaAction()
+#1 /var/www/cromos/yii/framework/validators/CValidator.php(213): CCaptchaValidator->validateAttribute(Object(LoginForm), 'verifyCode')
+#2 /var/www/cromos/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#3 /var/www/cromos/protected/controllers/SiteController.php(125): CModel->validate()
+#4 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#5 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#9 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 17:02:03 [error] [exception.CException] exception 'CException' with message 'CCaptchaValidator.action "captcha" is invalid. Unable to find such an action in the current controller.' in /var/www/cromos/yii/framework/validators/CCaptchaValidator.php:77
+Stack trace:
+#0 /var/www/cromos/yii/framework/validators/CCaptchaValidator.php(49): CCaptchaValidator->getCaptchaAction()
+#1 /var/www/cromos/yii/framework/validators/CValidator.php(213): CCaptchaValidator->validateAttribute(Object(LoginForm), 'verifyCode')
+#2 /var/www/cromos/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#3 /var/www/cromos/protected/controllers/SiteController.php(122): CModel->validate()
+#4 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#5 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#9 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/cromos/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 17:02:57 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.controller" is not defined.' in /var/www/cromos/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/cromos/protected/controllers/SiteController.php(123): CComponent->__get('controller')
+#1 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#6 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#7 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 17:04:46 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.controller" is not defined.' in /var/www/cromos/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/cromos/protected/controllers/SiteController.php(123): CComponent->__get('controller')
+#1 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#6 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#7 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 17:04:54 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.controller" is not defined.' in /var/www/cromos/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/cromos/protected/controllers/SiteController.php(123): CComponent->__get('controller')
+#1 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#6 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#7 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/cromos/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 18:06:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /var/www/cromos/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(270): CController->missingAction('captcha')
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('captcha')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/captcha')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/captcha&v=5318b93daaa73
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 18:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /var/www/cromos/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(270): CController->missingAction('captcha')
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('captcha')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/captcha')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/captcha&v=5318b93daaa73
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 19:30:29 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldControlGroup".' in /var/www/cromos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/cromos/protected/views/site/login.php(81): CComponent->__call('textFieldContro...', Array)
+#1 /var/www/cromos/protected/views/site/login.php(81): CActiveForm->textFieldControlGroup(Object(LoginForm), 'verifyCode', Array)
+#2 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#3 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#4 /var/www/cromos/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#5 /var/www/cromos/yii/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#6 /var/www/cromos/protected/controllers/SiteController.php(130): CController->render('login', Array)
+#7 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/cromos/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/contact
+---
+2014/03/06 19:45:25 [error] [exception.CException] exception 'CException' with message 'Alias "system.web.widgets.captcha" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/cromos/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('system.web.widg...', true)
+#1 /var/www/cromos/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'system.web.widg...', Array)
+#2 /var/www/cromos/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('system.web.widg...', Array)
+#3 /var/www/cromos/protected/views/site/contact.php(68): CBaseController->widget('system.web.widg...')
+#4 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#5 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#6 /var/www/cromos/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#7 /var/www/cromos/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /var/www/cromos/protected/controllers/SiteController.php(105): CController->render('contact', Array)
+#9 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cromos/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/cromos/index.php?r=site/contact
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/06 19:45:27 [error] [exception.CException] exception 'CException' with message 'Alias "system.web.widgets.captcha" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/cromos/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('system.web.widg...', true)
+#1 /var/www/cromos/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'system.web.widg...', Array)
+#2 /var/www/cromos/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('system.web.widg...', Array)
+#3 /var/www/cromos/protected/views/site/contact.php(68): CBaseController->widget('system.web.widg...')
+#4 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#5 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#6 /var/www/cromos/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#7 /var/www/cromos/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#8 /var/www/cromos/protected/controllers/SiteController.php(105): CController->render('contact', Array)
+#9 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/cromos/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/cromos/index.php?r=site/contact
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/10 15:07:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:07:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:07:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:08:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:08:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:09:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:09:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:09:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:09:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:09:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:11:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:12:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/cromos/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=gii
+---
+2014/03/10 15:33:50 [error] [php] Undefined index: Users (/var/www/cromos/protected/controllers/UsersController.php:54)
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#1 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/cromos/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#4 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/cromos/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#7 /var/www/cromos/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=users/register
+in /var/www/cromos/protected/controllers/UsersController.php (54)
+in /var/www/cromos/index.php (13)
+2014/03/10 15:34:49 [error] [php] Undefined index: Users (/var/www/cromos/protected/controllers/UsersController.php:54)
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#1 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/cromos/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#4 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/cromos/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#7 /var/www/cromos/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=users/register
+in /var/www/cromos/protected/controllers/UsersController.php (54)
+in /var/www/cromos/index.php (13)
+2014/03/10 15:34:51 [error] [php] Undefined index: Users (/var/www/cromos/protected/controllers/UsersController.php:54)
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#1 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/cromos/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#4 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/cromos/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#7 /var/www/cromos/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=users/register
+in /var/www/cromos/protected/controllers/UsersController.php (54)
+in /var/www/cromos/index.php (13)
+2014/03/10 15:35:05 [error] [php] Undefined index: Users (/var/www/cromos/protected/controllers/UsersController.php:54)
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#1 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/cromos/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#4 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/cromos/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#7 /var/www/cromos/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=users/register
+in /var/www/cromos/protected/controllers/UsersController.php (54)
+in /var/www/cromos/index.php (13)
+2014/03/11 14:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in /var/www/cromos/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(270): CController->missingAction('register')
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/register')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/register
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php
+---
+2014/03/11 14:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in /var/www/cromos/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(270): CController->missingAction('register')
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/register')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/register
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php
+---
+2014/03/11 15:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /var/www/cromos/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(270): CController->missingAction('captcha')
+#1 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('captcha')
+#2 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/captcha')
+#3 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/cromos/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=users/captcha&v=531f2663c2fe6
+---
+2014/03/11 15:06:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/captcha".' in /var/www/cromos/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/captcha')
+#1 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/cromos/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cromos/index.php?r=user/captcha&v=531f2663c2fe6
+---
+2014/03/11 15:58:10 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/var/www/cromos/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php(2379): spl_autoload_call()
+#1 /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php(3352): searchForm()
+#2 /var/www/cromos/protected/views/layouts/main.php(64): navbarSearchForm()
+#3 /var/www/cromos/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/cromos/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/cromos/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/cromos/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#9 /var/www/cromos/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#10 /var/www/cromos/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/cromos/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/cromos/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/cromos/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/cromos/protected/controllers/SiteController.php(105): SiteController->render()
+#15 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#16 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /var/www/cromos/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/cromos/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/cromos/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/contact
+in /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php (2379)
+in /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php (3352)
+in /var/www/cromos/protected/views/layouts/main.php (64)
+2014/03/11 15:58:35 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/var/www/cromos/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php(2379): spl_autoload_call()
+#1 /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php(3352): searchForm()
+#2 /var/www/cromos/protected/views/layouts/main.php(64): navbarSearchForm()
+#3 /var/www/cromos/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/cromos/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/cromos/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/cromos/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#9 /var/www/cromos/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#10 /var/www/cromos/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/cromos/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/cromos/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/cromos/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/cromos/protected/controllers/SiteController.php(105): SiteController->render()
+#15 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#16 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /var/www/cromos/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/cromos/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/cromos/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/cromos/index.php(13): CWebApplication->run()
+REQUEST_URI=/cromos/index.php?r=site/contact
+in /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php (2379)
+in /var/www/cromos/protected/extensions/yiistrap/helpers/TbHtml.php (3352)
+in /var/www/cromos/protected/views/layouts/main.php (64)
+2014/03/11 16:14:47 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.TbApi" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/cromos/yii/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/cromos/yii/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /var/www/cromos/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/cromos/yii/framework/base/CModule.php(103): CModule->getComponent('bootstrap')
+#3 /var/www/cromos/protected/views/layouts/main.php(2): CModule->__get('bootstrap')
+#4 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#5 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#6 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#7 /var/www/cromos/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/cromos/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/cromos/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/cromos/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/cromos/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/cromos/yii/framework/web/CBaseController.php(126): require('/var/www/cromos...')
+#13 /var/www/cromos/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/cromos...', Array, true)
+#14 /var/www/cromos/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#15 /var/www/cromos/protected/controllers/SiteController.php(105): CController->render('contact', Array)
+#16 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#17 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#21 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#22 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/cromos/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/cromos/index.php?r=site/contact
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/11 16:22:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'groucho'@'localhost' (using password: YES)' in /var/www/cromos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/cromos/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/cromos/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/cromos/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/cromos/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Users))
+#7 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/cromos/protected/controllers/UsersController.php(50): CActiveRecord->__construct()
+#9 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionRegister()
+#10 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/cromos/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#19 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/register')
+#20 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/cromos/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cromos/index.php?r=users/register
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/login
+---
+2014/03/11 16:22:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'groucho'@'localhost' (using password: YES)' in /var/www/cromos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/cromos/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/cromos/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/cromos/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/cromos/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Users))
+#7 /var/www/cromos/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/cromos/protected/controllers/UsersController.php(50): CActiveRecord->__construct()
+#9 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionRegister()
+#10 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/cromos/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/cromos/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/cromos/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/cromos/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/cromos/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#19 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/register')
+#20 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/cromos/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cromos/index.php?r=users/register
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=site/contact
+---
+2014/03/11 16:50:52 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/var/www/cromos/protected/views/site/login.php". A CActiveForm widget does not have an endWidget() call.' in /var/www/cromos/yii/framework/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/cromos/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/cromos...', Array, true)
+#1 /var/www/cromos/yii/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#2 /var/www/cromos/protected/controllers/SiteController.php(144): CController->render('login', Array)
+#3 /var/www/cromos/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#4 /var/www/cromos/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/cromos/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/cromos/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/cromos/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#8 /var/www/cromos/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 /var/www/cromos/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/cromos/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cromos/index.php?r=site/login
+HTTP_REFERER=http://bettercallsaul.tk/cromos/index.php?r=users/register
+---

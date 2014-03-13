@@ -10,8 +10,19 @@ class LoginForm extends CFormModel
 	public $username;
 	public $password;
 	public $rememberMe;
+	public $verifyCode;
 
 	private $_identity;
+
+	public function accessRules()
+	{
+		return array(
+			array('allow',
+			'actions' => array('captcha'),
+			'users' => array('*'),
+			),
+		);
+	}
 
 	/**
 	 * Declares the validation rules.
@@ -27,6 +38,8 @@ class LoginForm extends CFormModel
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
 			array('password', 'authenticate'),
+			array('username, password, verifyCode','required','on'=>'captchaRequired'),
+			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 
@@ -37,6 +50,7 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			'rememberMe'=>'Remember me next time',
+			'verifyCode'=>'Verify Code',
 		);
 	}
 

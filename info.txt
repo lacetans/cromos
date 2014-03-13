@@ -1,0 +1,4 @@
+Tasca: Afegir el ribbon als albums.
+http://localhost/cromosefecte/index.php?r=albums
+
+BBDD adherida

@@ -15,6 +15,9 @@
 			'items'=>$this->menu,
 			'htmlOptions'=>array('class'=>'operations'),
 		));
+
+		$this->widget('SearchBlock', array());
+      	 
 		$this->endWidget();
 	?>
 	</div><!-- sidebar -->

@@ -71,6 +71,8 @@ class AlbumsController extends Controller
 		{
 			$model->attributes=$_POST['Albums'];
 			if($model->save())
+				$model->url="http://localhost/cromos/index.php?r=albums/view&id=".$model->id;
+				$model->save();
 				$this->redirect(array('view','id'=>$model->id));
 		}
 

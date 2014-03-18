@@ -80,9 +80,9 @@ class Albums extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('nom',$this->nom,true);
-		$criteria->compare('descripcio',$this->descripcio,true);
-		$criteria->compare('portada',$this->portada,true);
+		$criteria->compare('nom',$this->nom);
+		$criteria->compare('descripcio',$this->descripcio);
+		$criteria->compare('portada',$this->portada);
 		$criteria->compare('aprovat',$this->aprovat);
 
 		return new CActiveDataProvider($this, array(

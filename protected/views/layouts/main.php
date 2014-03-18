@@ -6,8 +6,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ribbon.css"/>
-
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
@@ -28,6 +26,21 @@
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
+
+	<div id="nana">
+		<?php if(isset($_GET['action'])=='submitfunc') {
+			$retorn = $_POST['busqueda'];
+			//header( 'Location: http://localhost/cromos/index.php?r=search/create' );
+			//header( 'Location: http://localhost/cromos/index.php?r=search/search&q='.$retorn );
+
+//action="?action=submitfunc"
+		}else
+		echo '<form class="navbar-search pull-right" method="post" action="http://localhost/cromos/index.php?r=search/create">';
+		    echo '<input name="busqueda" type="text" class="search-query" placeholder="Search">';
+		echo '</form>';
+		?>		
+		
+	</div>	
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
@@ -57,14 +70,28 @@
 	</div><!-- footer -->
 
 </div>
+	
+<!--<?php 
+	//$this->widget('SearchBlocktop', array());
+?>-->
+
 <!--Exemple Yiistrap -->
-    <?php $this->widget('bootstrap.widgets.TbNavbar', array(
+    <!--<?php /*$this->widget('bootstrap.widgets.TbNavbar', array(
+    'brandLabel' => 'Title',
+    'items' => array(
+    TbHtml::navbarSearchForm('search/search'+'get'),
+    ),
+    ));*/
+    ?>-->
+
+<!--    <?php $this->widget('bootstrap.widgets.TbNavbar', array(
     'brandLabel' => 'Title',
     'items' => array(
     TbHtml::navbarSearchForm('#'),
     ),
     ));
-    ?>
+    ?>-->
+
 
 <!--Exemple Yiiwheels -->
     <?php

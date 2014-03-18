@@ -1,4 +1,7 @@
-Tasca: Afegir el ribbon als albums.
-http://localhost/cromosefecte/index.php?r=albums
+Tasca: Afegir un cercador.
 
-BBDD adherida
+Com usar-ho:
+Introdueixes el nom del cromo o album i retorna el nom d'aquest marcat amb un background blau,
+i informa si es un cromo o un album
+
+http://localhost/cromos/

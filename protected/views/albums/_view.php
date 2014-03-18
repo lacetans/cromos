@@ -18,23 +18,9 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('portada')); ?>:</b>
-	<script type="text/javascript">
-		function afegirribbon () {
-			$(document).ready( function() {
-			  $('.side-corner-tag > img').addClass('.side-corner-tag p');
-			  $('.side-corner-tag > img').addClass('.side-corner-tag p span');
-			  $('.side-corner-tag > img').addClass('.side-corner-tag p:before');
-			  $('.side-corner-tag > img').addClass('.side-corner-tag p:after');
-			  $( ".side-corner-tag" ).append( "<p><span>Novetat</span></p>" );
-			} );
-		}
-	</script>
-
-
-	<div class="side-corner-tag">
-	    <img src="<?php echo CHtml::encode($data->portada); ?>" onload="afegirribbon()"/>
-	</div>
+	<?php echo CHtml::encode($data->portada); ?>
 	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('aprovat')); ?>:</b>
 	<?php echo CHtml::encode($data->aprovat); ?>
 	<br />

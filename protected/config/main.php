@@ -32,6 +32,7 @@ return array(
 ),
 
 ),
+
 	'aliases' => array(
 
 	    // yiistrap configuration
@@ -56,16 +57,22 @@ return array(
 			),
 		),
 		*/
+		/*'db'=>array(
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+		),*/
+		// uncomment the following to use a MySQL database
+		
 		'db'=>array(
 'connectionString' => 'mysql:host=localhost;dbname=cromos',
 'emulatePrepare' => true,
 'username' => 'root',
-'password' => '',
+'password' => '123456',
 'charset' => 'utf8',
 #'schemaCachingDuration' => 180,
 #'enableProfiling'=>true,
 #'enableParamLogging' => true,
 ),
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

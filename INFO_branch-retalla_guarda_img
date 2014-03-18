@@ -16,13 +16,13 @@ Arxius:
 
 Crud:
 	albums
-	cromos
-	album_cromo_pagina
+	cromos (no pujat, no modificat)
+	album_cromo_pagina (no pujat, no modificat)
 
 Modificats en el crud Albums:
   ./protected/views/albums/view.php (afegit el codi html del creador de cromos)
   ./protected/controllers/AlbumsCrontoller.php (afegit actionAlta_Cromos guardar a la db)
-  ./protected/views/layouts/main.php (afegit al menu accesos a Albums, Cromos i )
+  ./protected/views/layouts/main.php (afegit al menu accesos a Albums, Cromos i AlbumCromoPagines)
 
 Base de dades:
   albums: afegir camp usuari_id int(11)
@@ -44,4 +44,4 @@ Els cromos es guarden al servidor a:
   1: Id de l'album de cromos en la db albums
   2: Id del cromo en la db cromos
 
-2014 - Daniel Ramos Lladó
+2014 - DanielRL

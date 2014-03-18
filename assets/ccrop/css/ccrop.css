@@ -74,10 +74,6 @@ img#cc_img{
   height: auto;
   width: 100%;
 }
-/* TEST PHP CODE RETURN TO JAVSCRIPT AJAX */
-div#cc_left{
-  display: block;
-}
 
 /* CANVAS PREVIEW */
 div#cc_right{
@@ -91,6 +87,11 @@ canvas#cc_canvas{
   border: 1px solid #000;
   height: auto;
   width: 100%;
+}
+
+/* TEST PHP CODE RETURN TO JAVSCRIPT AJAX */
+div#cc_left{
+  display: none;
 }
 
 /* RESPONSIVE WIDTH SIZE */

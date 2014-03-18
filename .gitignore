@@ -1,4 +1,4 @@
-assets/ccrop/js/jquery.min.js
+INFO_files
 protected/controllers/AlbumCromoPaginaController.php
 protected/controllers/CromosController.php
 protected/models/AlbumCromoPagina.php

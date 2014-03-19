@@ -1,0 +1,77 @@
+<?php
+/* @var $this ValidarController */
+
+$this->breadcrumbs=array(
+	'Gallery',
+);
+?>
+<h1><?php //echo $this->id . '/' . $this->action->id; ?></h1>
+<h1><?php echo "Validació de Cromos"; ?></h1>
+
+<script language="javascript">
+function checkAll() //marca i desmarca tots els cromos de la pàgina
+{
+     var checkboxes = document.getElementsByTagName('input'), val = null;    
+     for (var i = 0; i < checkboxes.length; i++)
+     {
+         if (checkboxes[i].type == 'checkbox')
+         {
+             if (val === null) val = checkboxes[i].checked;
+             checkboxes[i].checked = val;
+         }
+     }
+ }
+</script>
+
+<?php 
+	//Cromos Paginació
+	echo "
+	<form >
+	Tots: <th><INPUT type='checkbox' onchange='checkAll()' name='tots'/>
+	<table>
+		<tr>
+		  <th>ID</th>
+		  <th>Descripció</th>
+		  <th>Aprova</th>
+		  <th>Estat</th>
+	   </tr>";
+		foreach($models as $model): 
+			echo "<tr>";
+				echo ("<td>".$model->id."</td>");
+				echo ("<td>".$model->descripcio."</td>");
+				echo ("<td><input type='checkbox' name='cromo$model->id' value='$model->id'></td>");
+				echo ("<td>".$model->aprovat."</td>");
+			echo "</tr>";
+		endforeach; 
+	echo "
+	</table></form>";
+	
+	//Botons de la paginació 
+	$this->widget('CLinkPager', array('pages' => $pages,)) 
+?>
+
+<?php 
+	//BOTÓ APROVAR
+	$id_album=1;
+	$id_cromo=7;
+	echo "<br /><br />";
+	echo TbHtml::linkButton('Aprovar', 
+		array(
+			'color' => TbHtml::BUTTON_COLOR_SUCCESS, 
+			'url' => Yii::app()->createUrl("validar/aprovacromo",array("id_album"=>$id_album,"id_cromo"=>$id_cromo)),
+			//'url' => Yii::app()->createUrl("cromos/approve/$id_album/$id_cromo",array()), 
+			//'url' => Yii::app()->createUrl('controlador/acciodelcontrolador')));
+		)
+	); 
+?>
+
+
+<?php
+	//BOTÓ DENEGAR
+	echo TbHtml::linkButton('Denegar', 
+		array(
+			'color' => TbHtml::BUTTON_COLOR_DANGER,
+			'url' => Yii::app()->createUrl("validar/denegacromo",array("id_album"=>$id_album,"id_cromo"=>$id_cromo)),
+		)
+	); 
+?>

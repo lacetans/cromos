@@ -1,0 +1,40 @@
+Validar Cromos:
+	model: Cromos.php
+	vista: validar/gallery.php
+	controlador: ValidarController.php
+	url: http://localhost/cromos/index.php?r=validar/gallery
+
+Validar Preguntes: 
+	model: Preguntes.php
+	vista: preguntes/validarpreguntes.php
+	controlador: PreguntesController.php
+	url: http://localhost/cromos/index.php?r=preguntes/validarpreguntes
+
+Validar Imatges: 
+	model: Imatges.php
+	vista: preguntes/validarimatges.php
+	controlador: ImatgesController.php
+	url: http://localhost/cromos/index.php?r=imatges/validarimatges
+
+Altres Models: Albums.php, PreguntesDeRelacionar.php, PreguntesSiNo.php
+
+Altres anotacions:
+ - Les imatges dels cromos estan a: cromos/dades/cromos/1/...
+ - Les imatges estan ubicades a:    cromos/dades/imatges/1/...
+ - Les validacions d'imatges i cromos usen Image-Picker: 
+   http://rvera.github.io/image-picker/
+ - S'ha afegit el camp "validada" a la taula preguntes.
+ - S'ha afegit el camp "validada" a la taula imatges.
+ - Cromos, preguntes i imatges poden tenir tres estats:
+	*  0: pendent
+	* -1: denegat
+	*  1: aprovat
+ - Quan entrem a validar cromos, imatges o preguntes només veiem els que
+   tenen estat pendent (0)
+ - En els exemples s'usa un àlbum de demo amb id 1.
+ - Les imatges i cromos d'exemple no estan a la mida que s'usarà en l'aplicació
+ - S'adjunta una base de dades amb Cromos, Imatges i Preguntes d'exemple 
+   amb diferents estats anomenada cromos.sql
+
+ Roger Nebot - 2014
+ roger.neb@gmail.com

@@ -1,0 +1,100 @@
+// 2014 - Bernat Cortina //
+
+CRUD de Albums, Colecció i Usuaris
+
+
+config->main.php
+
+	- Definir els valors de la base de dades
+
+
+
+controllers:
+
+	- ColeccioController.php
+
+		-> funció actionRepte: en la pàgina repte.php, retorna totes les coleccions de l'usuari.
+		
+		-> funció actionInfo: funció que no retorna res.
+
+		-> funció actionRepte_usuari($id): a partir d'un ID d'album que se li passa, retorna una llista dels 
+		usuaris que compleixen els requisits per ser reptats (que tinguin el mateix àlbum, i alhora que tinguin 
+		cromos diferents). Tal i com tinc la BD l'unic resultat és l'usuari id=3 per a l'àlbum amb id=2.
+
+		-> funció actionReptar($id1,$id2): funció no implementada. Aquesta funció seria la que faria efectiu el repte.
+
+
+models:
+
+	- Albums.php
+		-> crear la relació amb la taula Usuaris.
+
+	- Coleccio.php
+		-> crear la relació amb la taula Usuaris, Albums i Cromos.
+		-> crear una funció busca els usuaris per id i en retorna el login (nom).
+
+	- Usuaris.php
+		-> crear la relació amb la taula Albums.
+
+
+views:
+
+	- layout
+
+		-> main.php
+			he afegit un valor a la barra de navegació que apunta a repte.php de coleccio.
+
+
+	- coleccio
+
+		-> info.php
+			pàgina amb informació sobre què és un repte.
+
+		-> repte.php i _repte.php
+			pàgina principal del repte. Aquí pots veure les coleccions l'usuari té. 
+			Fent clic a sobre un dels àlbums te'n vas a repte_usuari/$id, 
+			on l'$id és el id del àlbum escollit.
+
+		-> repte_usuari.php
+			retorna la llista d'usuaris disponibles per a reptar amb un botó que crida 
+			a la funció actionReptar($id1,$id2), on el primer id és l'usuari logejat, 
+			i el segon id és l'usuari de la llista per a reptar.
+
+
+
+
+S'adjunta també l'script sql per crear i omplir la BD amb els camps que he necessitat.
+
+
+// 2014 - Bernat Cortina //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

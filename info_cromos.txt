@@ -1,0 +1,38 @@
+SARA ESTEBAN - PREGUNTES
+
+
+Pàgina principal >> http://localhost/cromos/index.php?r=albums
+
+Pàgina codi afegir preguntes a la BBDD >>/var/cromos/protected/views/<tipus_pregunta>/view.php 
+					(està el codi d'afegir les preguntes)
+
+
+INFORMACIÓ CROMOS
+
+
+1.- Creació de preguntes
+	- Creació de taules a la BBDD
+
+		*****INFO*****
+		PREGUNTES_DE_RELACIONAR = 1 (model=PreguntesDeRelacionar)
+		PREGUNTES_SI_NO = 2  (model=PreguntesSiNo)
+		PREGUNTES_OMPLIR_BLANCS = 3 (model=PreguntesOmplirBlancs)
+		PREGUNTES_HOSPOT = 4 (model=PreguntesHospot)
+		PREGUNTES_OPCIO_MULTIPLE_RESPOSTA_UNICA = 5 (model = PreguntesOpcioMultipleRespostaUnica)
+		PREGUNTES_YOUTUBE = 6 (model =PreguntesYoutube)
+
+	- Afegir un id de tipus de pregunta
+	- formulari de creació
+
+	/var/cromos/protected/views/albums/view.php es troba la creació dels
+	dos	modals (crear preguntes/respondre preguntes);
+
+	
+	- Afegir les preguntes a la BBDD
+	- Afegir el id i el tipus de pregunta a la taula Album-pregunta per després
+	mostrar-les de manera random
+
+2.- Visualitzar les preguntes
+	- Creació d'un modal amb un visualitzador de preguntes de manera random segons l'album seleccionat
+		-Consulta a la bbdd de la taula album-pregunta
+	- (FALTA la comprovació AJAX..)

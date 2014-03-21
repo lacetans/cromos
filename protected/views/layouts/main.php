@@ -55,16 +55,16 @@
 	</div><!-- footer -->
 
 </div>
-<!--Exemple Yiistrap -->
+<!--Exemple Yiistrap 
     <?php $this->widget('bootstrap.widgets.TbNavbar', array(
     'brandLabel' => 'Title',
     'items' => array(
     TbHtml::navbarSearchForm('#'),
     ),
     ));
-    ?>
+    ?>-->
 
-<!--Exemple Yiiwheels -->
+<!--Exemple Yiiwheels 
     <?php
     $this->widget(
     'yiiwheels.widgets.highcharts.WhHighCharts',
@@ -84,6 +84,6 @@
     )
     )
     );
-    ?>
+    ?>-->
 </body>
 </html>

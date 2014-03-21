@@ -45,16 +45,24 @@
 	<?php endif?>
 
 	<?php echo $content; ?>
-
+	<!--<?php
+		$this->widget('ext.multiselect.JMultiSelect',array(
+      		'model'=>$model,
+      		'attribute'=>'attribute',
+      		'data'=>$data,
+      		// additional javascript options for the MultiSelect plugin
+      		'options'=>array()
+));
+	?>-->
 	<div class="clear"></div>
-
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
-</div><!-- page -->
+</div>
+<!--Exemple Yiistrap -->
     <?php $this->widget('bootstrap.widgets.TbNavbar', array(
     'brandLabel' => 'Title',
     'items' => array(
@@ -63,7 +71,7 @@
     ));
     ?>
 
-
+<!--Exemple Yiiwheels -->
     <?php
     $this->widget(
     'yiiwheels.widgets.highcharts.WhHighCharts',

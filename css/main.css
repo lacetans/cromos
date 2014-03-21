@@ -5,6 +5,7 @@ body
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
+	height: 500px;
 }
 
 #page
@@ -12,6 +13,7 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
+	height: 700px;
 	border: 1px solid #C9E0ED;
 }
 
@@ -25,6 +27,7 @@ body
 #content
 {
     padding: 20px;
+    
 }
 
 #sidebar

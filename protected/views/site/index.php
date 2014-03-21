@@ -18,3 +18,9 @@ $this->pageTitle=Yii::app()->name;
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
 should you have any questions.</p>
+
+<br/><br/>
+
+<p>Utilitzem galetes pròpies i de tercers per millorar l'experiència d'usuari, mostrar publicitat adaptada als vostres interessos i recollir dades amb l'objectiu d'analitzar l'audiència amb eines genèriques. Si segueixes navegant entenem que ho acceptes.</p>
+
+<a href="galetes"> <button>No, voldria més informació</button> </a>

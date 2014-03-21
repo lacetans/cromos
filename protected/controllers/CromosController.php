@@ -1,0 +1,247 @@
+<?php
+
+class CromosController extends Controller
+{
+	/**
+	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	 * using two-column layout. See 'protected/views/layouts/column2.php'.
+	 */
+	public $layout='//layouts/column2';
+
+	/**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+			'postOnly + delete', // we only allow deletion via POST request
+		);
+	}
+
+	/**
+	 * Specifies the access control rules.
+	 * This method is used by the 'accessControl' filter.
+	 * @return array access control rules
+	 */
+	public function accessRules()
+	{
+		return array(
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','view','yiiwheels'),
+				'users'=>array('*'),
+			),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update','Descripcio'),
+				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+
+	/**
+	 * Displays a particular model.
+	 * @param integer $id the ID of the model to be displayed
+	 */
+	public function actionView($id)
+	{
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+	/**
+	 * Creates a new model.
+	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 */
+	public function actionCreate()
+	{
+		$model=new Cromos;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Cromos']))
+		{
+			$model->attributes=$_POST['Cromos'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
+
+		$this->render('create',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+	public function actionUpdate($id)
+	{
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Cromos']))
+		{
+			$model->attributes=$_POST['Cromos'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
+
+		$this->render('update',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
+	 * Deletes a particular model.
+	 * If deletion is successful, the browser will be redirected to the 'admin' page.
+	 * @param integer $id the ID of the model to be deleted
+	 */
+	public function actionDelete($id)
+	{
+		$this->loadModel($id)->delete();
+
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}
+
+	/**
+	 * Lists all models.
+	 */
+	public function actionIndex()
+	{
+		$dataProvider=new CActiveDataProvider('Cromos');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+	}
+
+	/**
+	 * Manages all models.
+	 */
+	public function actionAdmin()
+	{
+		$model=new Cromos('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Cromos']))
+			$model->attributes=$_GET['Cromos'];
+
+		$this->render('admin',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer $id the ID of the model to be loaded
+	 * @return Cromos the loaded model
+	 * @throws CHttpException
+	 */
+	public function loadModel($id)
+	{
+		$model=Cromos::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+
+	/**
+	 * Performs the AJAX validation.
+	 * @param Cromos $model the model to be validated
+	 */
+	protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax']==='cromos-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+	}
+	
+	public function actionYiiwheels()
+	{
+		
+		$this->render('yiiwheels');
+	}
+	
+	public function Numeracioo($numeracio_cromo)
+	{   
+		//Ordenar els cromos per numeracio de menys a mes
+		//$numeracio=1;
+		$criteria=new CDbCriteria;
+		$criteria->select='*';  // seleccionar solo la columna 'title'
+		$criteria->condition='numeracio>=1';
+		$criteria->order = 'numeracio ASC';
+		//$criteria->params=array(':numeracio'=>$numeracio_cromo);
+		
+		
+		$dataProvider = new CActiveDataProvider('Cromos',array(
+			'criteria'=>$criteria
+		));
+		
+		
+		 $llista = Array();
+		
+        foreach($dataProvider->data as $data){ 
+            $llista[$data->id]=$data->numeracio; 
+            //$llista[]=array("0"=>$data->numeracio,"1"=>$data->descripcio); 
+        }
+		return($llista);
+       //print_r($llista);die();
+
+          //  die();
+	}
+	
+	public function Descripcio($cromos_album)
+	{   
+		//$cromos_album=array("0"=>3,"1"=>5);
+		$llista_cromos="";
+		foreach($cromos_album as $id=>$data){ 
+            $llista_cromos.=$data."," ;
+            
+        }
+        $llista_cromos=substr($llista_cromos, 0, -1);
+       // print($llista_cromos);die();
+		
+		
+		$criteria=new CDbCriteria;
+		$criteria->select='*';  // seleccionar solo la columna 'title'
+		$criteria->condition="id in($llista_cromos)";
+
+
+		
+		
+		$dataProvider = new CActiveDataProvider('Cromos',array(
+			'criteria'=>$criteria
+		));
+		
+		
+		 $llista = Array();
+
+        foreach($dataProvider->data as $data){ 
+            $llista[$data->id]=$data->descripcio; 
+            //$llista[]=array("0"=>$data->numeracio,"1"=>$data->descripcio); 
+        }
+		return($llista);
+       //print_r($llista);die();
+
+          //  die();
+	}
+	
+	
+	
+	
+}

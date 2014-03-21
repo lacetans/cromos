@@ -1,0 +1,20 @@
+<html >
+<head >
+<title >Prueba form</title >
+<script  languaje="javascript">
+function validar(){
+	if(document.NombreForm.NombreCampo.value==''){
+		alert('El campo esta vacio');
+		document.NombreForm.NombreCampo.focus();
+		return false;
+	}
+}
+</script >
+</head >
+<body >
+<form  action="detectar_dades2.html" method="post" name="NombreForm" onsubmit="return validar();">
+Escribe tu nombre:<input  type="text" name="NombreCampo">
+<input name="submit" id="submit" type="submit" value="Cargar" />
+</form >
+</body >
+</html 

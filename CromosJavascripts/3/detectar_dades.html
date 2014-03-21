@@ -1,0 +1,33 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function sumar(){
+i=1;
+}
+ 
+window.onbeforeunload = function (e) {
+    try{
+      if(i==1){
+      }
+        }catch(e){
+            var e = e || window.event;
+            // For IE and Firefox
+            if (e) {
+                e.returnValue = "No s’han desat les dades, segur que vols sortir?";
+            }
+                // For Safari
+            return "No s’han desat les dades, segur que vols sortir?";
+            };
+    }
+</script>
+<title>evitar tancar</title>
+</head>
+<body >
+<form name="formulari" id="formulari" action="#" method="post" enctype='multipart/form-data'>
+<!-- Aca un monton de campo -->
+Text1:<input type="text"   />
+Text2:<input type="text"   />
+<input name="submit" id="submit" type="submit" value="Cargar" onclick="sumar()" />
+</form>
+</body>
+</html>

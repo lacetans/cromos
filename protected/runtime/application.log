@@ -30,3 +30,80 @@ Stack trace:
 #27 {main}
 REQUEST_URI=/cromos/
 ---
+2014/03/10 17:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/page&view=about
+---
+2014/03/10 17:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/page&view=about
+---
+2014/03/10 18:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/page&view=about
+---
+2014/03/10 18:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/cromos
+---
+2014/03/10 18:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/cromos
+---
+2014/03/10 18:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/page&view=about
+---
+2014/03/10 18:05:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cromos".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cromos')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cromos')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cromos')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\cromos\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cromos/index.php?r=site/cromos
+HTTP_REFERER=http://localhost/cromos/index.php?r=site/page&view=about
+---

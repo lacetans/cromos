@@ -1,0 +1,80 @@
+Guillem Muñoz
+
+M'he encargat de fer la part de com queden els cromos amb PHP i detectar el llenguatge del navegador, saber si és d'un dispositiu mòbil i evitar tancar la finestra amb Javascript.
+
+PHP:
+Com queden els cromos.
+
+BD: Cromos.sql
+user: cromos
+pass: cromos
+
+Per veure com queden els cromos anar a:
+
+http://localhost/cromos-master/index.php?r=coleccio/llistat
+
+Aquí podem veure un resum dels cromos que tinc en el àlbum, així com els que ens falten i els repetits.
+En la 1a plana veiem tots els cromos que té el album amb format taula.
+Si fem clic al botó verd ens portarà als cromos que té l'usuari.
+Si fem clic al botó vermell ens mostrarà una llista dels cromos que falten.
+Si fem clic al botó grogenc ens mostrarà una llista dels cromos repetits així com les vegades que els tinc repetits.
+
+Per aconseguir tot això he tocat 3 taules de la BD.
+
+cromos, albums, album_cromo_pagina i coleccio.
+
+I m'he encarregat de relacionar els camps necesaris per aconseguir que es mostrin les dades que volia, fen ús del criteria i tocant els fitxers del controller.
+
+Abans de tot fer un crud de les taules per tenir el model i el controlador de cada taula.
+
+en el controlador ColeccioController.php he creat 4 funcions publiques amb el action, cadascuna d'elles s'anomenen:
+
+- Llistat
+	Mostra els cromos del album, el total de cromos que té l'usuari, el num de cromos repetits, el num de cromos que falten, agafan els mètodels del controlador AlbumCromoPagina.
+-Repetits
+	Mostra els cromos repetits, el total de cromos que té l'usuari, el num de cromos repetits, el num de cromos que falten, agafan els mètodels del controlador AlbumCromoPagina.
+-Falten
+	Mostra els cromos que falten, el total de cromos que té l'usuari, el num de cromos repetits, el num de cromos que falten, agafan els mètodels del controlador AlbumCromoPagina.
+-CromosUsuari
+	Mostra els cromos que té l'usuari, el total de cromos que té l'usuari, el num de cromos repetits, el num de cromos que falten, agafan els mètodels del controlador AlbumCromoPagina.
+
+Cada funció d'aquestes he creat un objecte anomenat array dades que amb un foreach vaig fent que iteri per a cada variable que necessito per  a que es mostri en format de taula.
+Llavors ho renderitzo a la seva respectiva vista passant-li el array de dades  en el qual ja mi inclou les dades necesaries en cada cas.
+Així a la vista amb un widget del yiistrap agafo les dades del array dades i les mostro.
+
+Cal dir que he creat les seves respectives vistes amb els mateixos noms i donant-lis permisos per accedir a veure la informació en el navegador.
+
+Llavors en el controlador AlbumCromoPaginaController.php hi han 3 funcions que necessitava crear en aquest controlador per passar les dades en el controlador ColeccioController.php i són:
+
+-CromosTotals
+	Retorna el total de cromos que hi han en el album
+-CromosFalten
+	Retorna els cromos que falten
+-Numeracio
+	Retorna un array amb la numeració de cada cromo
+
+També he creat dues funcions mes al controlador CromosController.php per agafar dades i passarli al ColeccioController.php i són:
+
+-Numeracioo
+	Retorna un array amb el id de cada cromo i la seva numeració
+-Descripcio
+	Retorna un array amb la descripció de cada cromo.
+
+
+JAVASCRIPT:
+
+La part de Javascript l'he posat en una carpeta a part tal i com vam acordar el professor i l'alumne, la carpeta s'anomena CromosJavascript i dins hi han 3 subcarpetes del 1 al 3.
+La carpeta 1 hi ha la part de detectar l'idioma del navegador.
+La carpeta 2 hi ha la part de saber si l'usuari està navegant des d'un dispositiu mòbil.
+La carpeta 3 hi ha la aprt d'evitar tancar la pàgina sinó s'han guardat les dades correctament.
+
+
+
+
+
+
+ 
+
+
+
+

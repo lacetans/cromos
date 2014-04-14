@@ -2,3 +2,22 @@ Tasca: Afegir el ribbon als albums.
 http://localhost/cromosefecte/index.php?r=albums
 
 BBDD adherida
+
+Material:
+ - http://www.inserthtml.com/2012/03/creating-css-image-ribbons/
+
+Canvis:
+ - S'ha creat el fitxer css ribbon
+ - A la view dels albums he creat una funció que sería la s'afegeix a la imatge que volem afegir el ribbon amb un onload="afegirribbon()
+ <script type="text/javascript">
+		function afegirribbon () {
+			$(document).ready( function() {
+			  $('.side-corner-tag > img').addClass('.side-corner-tag p');
+			  $('.side-corner-tag > img').addClass('.side-corner-tag p span');
+			  $('.side-corner-tag > img').addClass('.side-corner-tag p:before');
+			  $('.side-corner-tag > img').addClass('.side-corner-tag p:after');
+			  $( ".side-corner-tag" ).append( "<p><span>Novetat</span></p>" );
+			} );
+		}
+	</script>
+	

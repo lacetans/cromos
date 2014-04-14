@@ -1,6 +1,35 @@
 Tasca: Afegir un cercador.
 
-Com usar-ho:
+Material utilitzat:
+ - http://www.yiiframework.com/wiki/248/adding-search-to-yii-blog-example-using-zend-lucene/
+
+Passes: 
+ - S'instal·la segons indica la documentació.
+ - Aquest cercador cada cop que s'insereix un camp a la bbdd necessita passar per aquesta pagina: 
+ http://localhost/cromos/index.php/search/create això ho he arreglat posteriorment explico com.
+ 
+Adaptació del cercador:
+ - Layout main.
+  - M'he carregat el search que venia per defecte i n'he creat jo un altre, el nou form envía a la pagina 
+  http://localhost/cromos/index.php?r=search/create, es imprescindible que passi per aqui, de no pasar per aquesta pagina
+  no es podrien afegir mai els nous albums, d'aquesta forma forço a que s'afegeixin els possibles nous albums a l'array.
+  Aquesta pagina pertany al SearchController.
+  
+ - SearchController.
+  - Es carreguen els models cromos i albums. Es recorren aquests models i es guarden els camps links i descripcio.
+  - Desprès rediregeixo la pagina a header( 'Location: http://localhost/cromos/index.php?r=search/search&q='.$retorn );
+    retorn es un post que agafa la paraula de la busqueda. Això genera una vista amb els resultats de la busqueda.
+  - Aquesta vista mostra el nom, i el link del album o cromo.
+  
+Com es crea el link?
+ - En el model album-cromo s'afegeix la url a la bbdd, agafo la id de cromo o album i en genero una url amb aquest,
+   d'aquesta forma m'es més fàcil mostrar-la desprès a la view dels resultats de busqueda.
+      if($model->save())
+				$model->url="http://localhost/cromos/index.php?r=albums/view&id=".$model->id;
+				$model->save();
+				$this->redirect(array('view','id'=>$model->id));
+
+Com funciona? 
 Introdueixes el nom del cromo o album i retorna el nom d'aquest marcat amb un background blau,
 i informa si es un cromo o un album
 
